@@ -1,0 +1,29 @@
+* {
+    background-color:green
+}
+
+
+
+
+nav {
+    background-color:peru;
+    border-radius: 10px;
+    
+}
+
+a {
+    color: beige;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration:none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul {
+    list-style-type: style type none;
+    justify-content: space-between;
+
+}
+button {}
