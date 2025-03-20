@@ -1,10 +1,9 @@
-<html>
+html>
     <html lang="en">
     <head>
-
-        <title> LYN'S KARATE AKADEMY</title>
+        
+        <title>LYN'S KARATE AKADEMY</title>
         <link rel="stylesheet" href="style.css"/> 
-
     </head>
     <body>
         <section id="about-us">
@@ -18,6 +17,13 @@
               <p>To be a leading academy that promotes health, fitness, and personal growth through karate. We envision a community where every participant, regardless of age or background, has the opportunity to develop strength, resilience, and self-assurance.</p>
             </div>
           </section>
+          h3>Nourish your mind and body with soft and hard physical skills</h3>
+        <button>Become a student</button>
+        <button>Become a client</button>
+        <p> <style></style></p>For children of age between 3years to 10years</p>
+                <button>Register</button>
+                <p>For children of age between 11years to 18years</p>
+                <button>Register</button>
           
     </body>
     </html>

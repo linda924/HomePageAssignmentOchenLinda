@@ -1,68 +1,174 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-    <title>Selfdefence for kids and physiotherapy for pregnant women</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYN'S KARATE AKADEMY </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            background-color: orchid;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .btn-white {
+            background-color: white;
+            color: orchid;
+        }
+        
+        .btn-dark {
+            background-color: #111;
+            color: white;
+        }
+        
+        .hero {
+            height: 80vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn-green {
+            background-color: orchid;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+        }
+        
+        .hero-content {
+            z-index: 1;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px 5%;
+            }
+            
+            .nav-links {
+                margin: 15px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <!--Header Section-->
-    <header>
-        <nav >
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="opportunities.html">Opportunities</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <!--Hero section-->
-    <section>
-        <h1>WELCOME TO KARATE ACADEMY</h1>align-content; center
-        <h3>Nourish your mind and body with soft and hard physical skills</h3>
-        <button>Become a student</button>
-        <button>Become a client</button>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            
+            <h2> LYN'S KARATE ACADEMY </h2>
+        </div>
+        
+        <div class="nav-links">
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+                
+        <div class="buttons">
+            <a href="achievements.html" class="btn btn-white">Karate Achievements</a>
+            <a href="login.html" class="btn btn-dark">Login</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="Black.png" alt="black1" class="hero-image">
+        <div class="hero-content">
+            <h1>WELCOME TO LYN'S KARATE ACADEMY</h1>
+            <p>Nourish your mind and body with hard and soft physical skills</p>
+            <a href="#" class="btn btn-green">Become a member</a>
+        </div>
     </section>
-
-    <p>OUR SERVICES</p>
-    <div style="background-color: aqua;">
-        <ul>
-            <li>
-                <img src="children.jpeg"  alt="children training karate" style="width: 100px;" />
-                <p>For children of age between 3years to 10years</p>
-                <button>Register</button>
-                <p>For children of age between 11years to 18years</p>
-                <button>Register</button>
-            </li>
-        </ul>
-    </div>
-
-    <div style="background-color: white;">
-
-        <ul>
-            <li>
-                <img src="women.jpeg" alt="women training karate" style="width: 100px;" />
-                <p>pregnant women for 4months to 6month</p>
-                <button>Register</button>
-                <p>pregnant women for 7months to 9month</p>
-                <button>Register</button>
-            </li>
-        </ul>
-    </div>
-
-    <footer style="background-color: dimgray;">
-        <p>&copy; 2025 karate Academy.</p>
-        <p>strength, Discipline, Honor-Unleash the warrior within</p>
-    </footer>
-
-
-
 </body>
-
 </html>
