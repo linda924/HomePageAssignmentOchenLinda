@@ -1,0 +1,23 @@
+html
+!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Form</title>
+</head>
+<body>
+    <!--form-->
+    <section>
+        <h3>student form </h3>
+        <form>
+            <div>
+        <label>Name</label><br><br>
+        <input type="text"><br><br>
+            </div>
+            <button>submit </button>
+        <label>Age</label><br><br>
+        <input>type
+    
+    
+</body>
+</html>
