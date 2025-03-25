@@ -1,23 +1,88 @@
-html
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
- 
-    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKING HOURS</title>
 </head>
 <body>
-    <!--form-->
-    <section>
-        <h3>student form </h3>
-        <form>
-            <div>
-        <label>Name</label><br><br>
-        <input type="text"><br><br>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="black1.png" alt="Karate Logo">
+                </a>
             </div>
-            <button>submit </button>
-        <label>Age</label><br><br>
-        <input>type
+            
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            
+            <div class="buttons">
+                <a href="Testimonies.html" class="btn btn-white">Testimonies from Clients of Lyn's Academy</a>
+                <a href="login.html" class="btn btn-dark">Login</a>
+            </div>
+        </div>
+    </nav>
     
-    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LYN'S KARATE ACADEMY</h1>
+            <p>Nurture your physical ability within and unleash your strength</p>
+            <button class="btn-green" id="memberButton">Become a member</button>
+        </div>
+    </section>
+
+    <section>
+        <h3>Working Hours</h3>
+        
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Time</th>
+                    <th>Closing Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>8:00am</td>
+                    <td>5:00pm</td>
+                </tr>
+                 <tr>
+                    <td>Tuesday</td>
+                    <td>8:00am</td>
+                    <td>5:00pm</td>
+                 </tr>
+                 <tr>
+                    <td>Wednesday</td>
+                    <td>8:00am</td>
+                    <td>5:00pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>8:00am</td>
+                    <td>5:00pm</td>
+                </tr>
+                <tr>
+                   <td>Friday</td>
+                   <td>8:00am</td>
+                   <td>5:00pm</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button>Submit</button>
+        
+        <label for="age">Age</label><br><br>
+        <input type="text" id="age"><br><br>
+    </section>
 </body>
 </html>
