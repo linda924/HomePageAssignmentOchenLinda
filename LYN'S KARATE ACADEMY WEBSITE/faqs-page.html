@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Lyn's Karate Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faqs-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            color: orchid;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle.active {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="black1.png" alt="Karate -logo.webp">
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            
+            <div class="buttons">
+                <a href="Testimonies.html" class="btn btn-white"> Testimonies from Clients of Lyn's Academy</a>
+                <a href="login.html" class="btn btn-dark">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="faqs-container">
+        <h1 style="text-align: center; color: orchid; margin-bottom: 30px;">Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What age groups do you train?</span>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                We offer specialized training for toddlers (5-10 years), teenagers (11-19 years), and even have unique programs for pregnant women from 4-9 months.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Do I need prior martial arts experience?</span>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                No prior experience is necessary. Our trainers design programs for all skill levels, ensuring a comfortable and progressive learning environment.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What are the benefits of karate for children?</span>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                Karate helps children develop discipline, improve physical fitness, boost self-confidence, learn self-defense, and enhance focus and coordination.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How safe are the training programs for pregnant women?</span>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                Our programs for pregnant women are specifically designed with safety as the top priority. Trainers are certified in prenatal fitness and modify exercises to suit individual needs.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What equipment do I need to start?</span>
+                <i class="fas fa-chevron-down faq-toggle"></i>
+            </div>
+            <div class="faq-answer">
+                Initially, comfortable workout clothes and an open mind. We'll guide you on acquiring a karate gi (uniform) and any necessary protective gear as you progress.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const toggle = item.querySelector('.faq-toggle');
+                
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                toggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
